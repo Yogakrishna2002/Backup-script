@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+
+SOURCE="/home/krish/hey"
+DEST="/home/krish/yoga/newbackup_$(/bin/date +%F).tar.gz"
+
+/bin/tar -czf "$DEST" "$SOURCE"
+
+/bin/echo "Backup saved to: $DEST"
+
